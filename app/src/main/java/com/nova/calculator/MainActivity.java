@@ -6,7 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements InputFragment.CalculatorFragmentListener {
+public class MainActivity extends AppCompatActivity implements InputFragment.InputFragmentListener {
     public InputFragment inputFragment;
     public DisplayFragment resultFragment;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)

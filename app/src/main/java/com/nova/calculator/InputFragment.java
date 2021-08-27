@@ -40,7 +40,7 @@ public class InputFragment extends Fragment {
     private Button clearBtn;
     private Button bracketBtn;
     private Button expoBtn;
-    private CalculatorFragmentListener listener;
+    private InputFragmentListener listener;
 
 
     @Override
@@ -274,7 +274,7 @@ public class InputFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        listener = (CalculatorFragmentListener) context;
+        listener = (InputFragmentListener) context;
     }
 
     @Override
@@ -283,7 +283,7 @@ public class InputFragment extends Fragment {
         listener = null;
     }
 
-    public interface CalculatorFragmentListener {
+    public interface InputFragmentListener {
         void sendResult(String result);
     }
 
